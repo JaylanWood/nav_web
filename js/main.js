@@ -107,10 +107,10 @@ function createImg(domain) {
 	if (website) {
 		img.src = 'http://' + website + '/favicon.ico'
 	} else {
-		img.src = '../img/myIcon.png'
+		img.src = 'https://i.loli.net/2019/09/02/swiY48DAmWuzeI9.png'
 	}
 	img.onerror = function (imgError) {
-		imgError.target.src = '../img/myIcon.png'
+		imgError.target.src = 'https://i.loli.net/2019/09/02/swiY48DAmWuzeI9.png'
 	}
 	return img
 }
@@ -130,7 +130,7 @@ function createButton(id) {
 		img = buttonClick.target.previousSibling//从btn的兄弟获取icon
 		img.src = 'http://' + website + '/favicon.ico'
 		img.onerror = function (imgError) {
-			imgError.target.src = '../img/myIcon.png'
+			imgError.target.src = 'https://i.loli.net/2019/09/02/swiY48DAmWuzeI9.png'
 		}
 		//保存用户数据在浏览器本地
 		localStorage.setItem('usrCustomWeb', JSON.stringify(hash))
