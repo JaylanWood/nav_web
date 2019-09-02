@@ -1,0 +1,67 @@
+* {
+	margin: 0%;
+	padding: 0%
+}
+
+body {
+	background: gray url(../img/saber.jpg) no-repeat center center;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	background-color: rgba(230, 230, 230, 0.3);
+	border-radius: 10px;
+	padding: 5px;
+}
+
+div.kbdRow {
+	text-align: center;
+}
+
+kbd.kbdKey {
+	width: 4em;
+	height: 4em;
+	display: inline-block;
+	background-color: #EEEEEE;
+	border: 1px solid #C1C1C1;
+	box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 8px;
+	margin: 5px;
+	position: relative;
+	font-family: 'pingfang';
+}
+
+kbd.kbdKey:hover button.editBtn {
+	display: inline;
+	cursor: pointer;
+}
+
+span.text {
+	text-transform: uppercase;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+}
+
+span.text:hover {
+	cursor: default;
+}
+
+img.icon {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	bottom: 4px;
+	left: 4px;
+}
+
+button.editBtn {
+	position: absolute;
+	right: 4px;
+	bottom: 4px;
+	display: none;
+}
